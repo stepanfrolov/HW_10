@@ -1,0 +1,25 @@
+copy NUL .gitconfig
+git config --list --global
+git clone https://github.com/stepanfrolov/HW_10.git
+cd C:\Users\user\HW_10
+type nul> text_ignore.txt
+notepad .gitignore
+git status
+git add .
+git commit -m "Task 1"
+type nul> main_test.txt
+git add .
+git commit -m "Task 2"
+git branch develop
+git checkout develop
+type nul> develop_test.txt
+git add .
+git commit -m "Task 3 part 1"
+notepad develop_test.txt
+git status
+git add .
+git commit -m "Task 3 part 2"
+git checkout main
+git merge develop
+git log
+doskey /history > command_list.csv
